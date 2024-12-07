@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book mark</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div
+      class="container overflow-hidden d-flex justify-content-center flex-column align-items-center py-3"
+    >
+      <h1 class="py-2 mt-3 fw-bolder position-relative">Bookmarker</h1>
+      <div class="bookMarkBody w-100 my-5 d-flex flex-column justify-content-center align-items-center gap-3">
+        <h2 class="p-4 text-center">
+          <i class="fa-solid fa-book-bookmark" style="color: #63e6be"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-book-bookmark" style="color: #63e6be"></i>
+        </h2>
+        <div class="sitelabels w-100 d-flex flex-column justify-content-center ">
+          <label for="bookmarkname" class="fw-semibold">
+            <i class="fa-regular fa-bookmark"></i>
+            site Name
+          </label>
+          <input
+            type="text"
+            id="bookmarkname"
+            name="bookmarkname"
+            class="form-control my-2"
+            placeholder="bookmark Name"
+          />
+        </div>
+        <div class="sitelabels w-100 d-flex flex-column justify-content-center ">
+          <label for="siteurl" class="fw-semibold">
+            <i class="fa-solid fa-link"></i>
+            site url
+          </label>
+          <input
+            type="url"
+            id="siteurl"
+            name="site url"
+            class="form-control my-2"
+            placeholder="website url"
+          />
+        </div>
+        <button onclick="addWeb() " class="btn btn-danger rounded rounded-1  py-1 px-4 mb-3" id="submit">submit</button>
+      </div>
+      <table class="mt-1  bg-light w-100 text-center ">
+        <thead >
+            <tr >
+                <td>index</td>
+                <td>Website Name</td>
+                <td>Visit</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
